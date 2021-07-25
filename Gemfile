@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'iex-ruby-client'
+gem 'rubocop'
+gem 'font-awesome-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false

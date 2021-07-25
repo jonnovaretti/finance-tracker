@@ -1,0 +1,17 @@
+<div class="result-block">
+    <div class="col-sm-9">
+        <%= render 'layouts/messages' %>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-sm-9">
+        <% unless @stock.nil? %>
+            <div class="card card-header results-block">
+                <strong>Symbol: </strong> <%= @stock.ticker%>
+                <strong>Name: </strong> <%= @stock.name %>
+                <strong>Price: </strong> <%= @stock.last_price %>
+            </div>  
+        <% end %>
+    </div>
+</div>
