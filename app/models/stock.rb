@@ -14,4 +14,9 @@ class Stock < ApplicationRecord
       nil
     end
   end
+
+  def self.create_stock_by_ticker(ticker_symbol)
+    stock = Stock.new_lookup(ticker_symbol)
+    Stock.create(name: stock.name, ticker: stock.ticker, last_price: stock.last_price)
+  end
 end
